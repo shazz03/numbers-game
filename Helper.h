@@ -19,7 +19,7 @@ int Helper::FindArrayIndex(int arr[], int x, int size)
 int* Helper::CopyArray(int* arr, int size) {
 	int* orgArray;
 	orgArray = new int[size];
-	for (unsigned i = 0; i < size; i++)
+	for (int i = 0; i < size; i++)
 	{
 		orgArray[i] = arr[i];
 	}

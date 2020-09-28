@@ -33,11 +33,10 @@ int Main::SelectMenu() {
 		{
 			if (mainScreen.QuitGame() == 0)
 			{
-				break;
+				exit(0);
 			}
 			mainScreen.ReinitialiseScreen();
 		}
-
 	}
 	return 0;
 }
@@ -47,5 +46,6 @@ void Main::PlayGame() {
 	GamePlay gamePlay;
 	gamePlay.numberOfMatrix = 9;
 	gamePlay.numberOfTry = 10;
+	gamePlay.timeToMemorise = 9;
 	gamePlay.PlayGame();
 }
